@@ -33,3 +33,13 @@ To get started with the To-Do List application, follow the steps below:
    git clone https://github.com/your-username/todo-list.git
    cd todo-list
    ```
+
+   ```bash
+   npm install
+   ```
+
+2. **Run the App**
+
+   ```bash
+   npm run dev
+   ```
