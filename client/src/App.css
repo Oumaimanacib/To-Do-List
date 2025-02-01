@@ -1,0 +1,113 @@
+/* Reset some default styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5efe7;
+
+  /* Utilisation de Flexbox */
+  display: flex;
+  justify-content: center; /* Centrage horizontal */
+  align-items: center; /* Centrage vertical */
+  height: 100vh; /* Hauteur totale de la fenêtre */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem; /* Plus de padding pour un effet plus grand */
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Ombre plus marquée */
+  border-radius: 8px;
+  width: 80%; /* Largeur plus grande */
+  max-width: 1000px; /* Largeur maximale plus grande */
+  min-height: 500px; /* Hauteur minimale plus grande */
+  text-align: center; /* Centrage du texte */
+}
+
+h1 {
+  font-size: 3rem; /* Augmenter la taille du titre */
+  font-weight: 600;
+  color: #213555;
+  margin-bottom: 1rem;
+}
+
+.container ul {
+  width: 100%; /* S'assurer que la liste occupe toute la largeur disponible */
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.container ul li {
+  width: 100%; /* S'assurer que l'élément occupe 100% de la largeur du conteneur */
+  font-size: 1rem; /* Taille du texte des éléments de la liste */
+  padding: 10px;
+  border-radius: 4px;
+  overflow-wrap: break-word; /* Permet aux mots longs de se casser et d'éviter le dépassement */
+  word-wrap: break-word; /* S'assure que les longs mots sont également cassés */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+
+.container ul li:hover {
+  background-color: #e7f6e7;
+  transform: scale(1.05); /* Un peu plus de zoom au survol */
+}
+
+.done {
+  text-decoration: line-through;
+  color: #ccc;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem; /* Plus de padding pour les éléments */
+  margin-bottom: 1rem;
+  background-color: #f7f7f7;
+  border: 3px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 2px px rgba(0, 0, 0, 0.15); /* Ombre plus marquée */
+}
+
+.item span {
+  font-size: 1.8rem; /* Augmenter la taille de l'icône de suppression */
+  color: #ff5252;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.item span:hover {
+  transform: scale(1.5); /* Plus grand au survol */
+}
+
+input[type="text"] {
+  width: calc(100% - 1rem);
+  padding: 0.7rem; /* Plus de padding pour l'input */
+  margin-top: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  font-size: 1.2rem; /* Augmenter la taille de la police */
+}
+
+button {
+  margin-top: 1.5rem; /* Espacement plus grand */
+  padding: 1rem 2rem; /* Plus de padding pour le bouton */
+  background-color: #213555;
+  color: #fff;
+  font-size: 1.2rem; /* Augmenter la taille de la police */
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #758694;
+  transform: translateY(-3px); /* Effet plus marqué sur le bouton */
+}
